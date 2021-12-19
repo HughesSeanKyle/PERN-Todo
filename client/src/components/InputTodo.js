@@ -3,6 +3,8 @@ import React, { Fragment, useState } from 'react';
 const InputTodo = () => {
 	const [description, setDescription] = useState('');
 
+	// You can useEffect cleanup function to reset input value
+
 	const onSubmitForm = async (e) => {
 		e.preventDefault();
 		try {
@@ -13,7 +15,7 @@ const InputTodo = () => {
 				body: JSON.stringify(body),
 			});
 
-			console.log(response);
+			window.location = '/';
 		} catch (err) {
 			console.error(err.message);
 		}
