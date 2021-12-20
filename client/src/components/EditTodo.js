@@ -81,7 +81,7 @@ const EditTodo = ({ todo }) => {
 								className="btn btn-warning"
 								onClick={(e) => updateDescription(e)}
 							>
-								Edit
+								Save
 							</button>
 							<button
 								type="button"
